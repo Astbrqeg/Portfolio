@@ -1,0 +1,81 @@
+.banner {
+    background-image: url("../../img/banner-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    margin-top: 0;
+    padding: 260px 0 500px 0;
+
+}
+
+.paragraph {
+    position: absolute;
+    margin-top: 12%;
+    left: 10%;
+    transform: translateY(-50%);
+
+}
+
+h1 {
+    font-size: 65px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+
+}
+
+.major {
+    border-right: 5px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: typing 2s steps(20),
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+h2 {
+    font-size: 20px;
+    font-weight: 100;
+    color: #B8B8B8;
+}
+
+
+.imghead {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.banner img {
+    animation: updown 3s linear infinite;
+    width: 450px;
+
+}
+
+
+@keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
