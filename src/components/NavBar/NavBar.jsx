@@ -32,15 +32,15 @@ export const NavBar = () => {
 
     return (
 
-        <div className="nav">
+        <div className="nav" >
 
 
-            <div className="collapse-navbar-collapse" id="navbarSupportedContent">
+            <div id="navbarSupportedContent" className={scrolled ? 'scrolled' : ''}>
 
                 <div className="social-icon">
                     <a href="#"><img src={navIcon1} alt="" /></a>
                 </div>
-                <nav className={scrolled ? 'scrolled' : ''}>
+                <nav>
                     <ul className="navbar-nav-mr-auto">
                         <li className="nav-item">
                             <a className='nav-link' onClick={() => onUpdateActiveLink('home')} href="#">Home</a>

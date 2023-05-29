@@ -1,0 +1,19 @@
+.rectangle {
+    position: absolute;
+    background-color: #151515;
+    width: 900px;
+    height: 300px;
+    top: 70%;
+    left: 24%;
+    border-radius: 30px;
+
+}
+
+.skh1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-family: Playfair;
+    margin-top: 20px;
+}

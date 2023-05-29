@@ -1,10 +1,19 @@
 import "./Skills.css";
 import '../../App.css';
+import Slider from "./Slider";
 
 
-export const Skills = () =>{
+ const Skills = () =>{
     return(
-        <div>
+        <div className="Skills">
+            <div className="rectangle">
+                <h1 className="skh1">Skills</h1>
+                <div className="slider">
+                    <Slider/>
+                </div>
+            </div>
         </div>
     )
 }
+
+export default Skills;
