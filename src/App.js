@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter} from 'react-router-dom';
 import { NavBar } from './components/NavBar/NavBar';
 import {Banner} from "./components/Banner/Banner";
 import Skills from "./components/Skills/Skills";
@@ -15,6 +15,7 @@ function App() {
       <NavBar />
       <Banner />
       <Skills />
+      <Projects />
       </BrowserRouter>
     </div>
   );

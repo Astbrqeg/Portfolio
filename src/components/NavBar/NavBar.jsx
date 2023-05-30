@@ -38,7 +38,7 @@ export const NavBar = () => {
             <div id="navbarSupportedContent" className={scrolled ? 'scrolled' : ''}>
 
                 <div className="social-icon">
-                    <a href="#"><img src={navIcon1} alt="" /></a>
+                    <a href="https://www.linkedin.com/in/fullstackastbrq/"><img src={navIcon1} alt="" /></a>
                 </div>
                 <nav>
                     <ul className="navbar-nav-mr-auto">
@@ -46,7 +46,7 @@ export const NavBar = () => {
                             <a className='nav-link' onClick={() => onUpdateActiveLink('home')} href="#">Home</a>
                         </li>
                         <li className="nav-item">
-                            <a className='nav-link' onClick={() => onUpdateActiveLink('skills')} href="#">Skills</a>
+                            <a className='nav-link' onClick={() => onUpdateActiveLink('kills')} href="#">Skills</a>
                         </li>
                         <li className="nav-item">
                             <a className='nav-link' onClick={() => onUpdateActiveLink('projects')} href="#">Projects</a>

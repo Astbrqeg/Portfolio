@@ -12,9 +12,7 @@ export const Banner = () =>{
                <p className="major">Full Stack Developer</p>
                </h1>
 
-
                <h2>Frontend Developer / Backend Developer</h2>
-
 
             </div>
                 <div className="imghead">
@@ -23,17 +21,3 @@ export const Banner = () =>{
         </div>
     )
 }
-{/* <span className={letterClass}>H</span>
-               <span className={`${letterClass} _2`}>i,</span>
-                <br/>
-                <span className={`${letterClass} _3`}>I</span>
-                <span className={`${letterClass} _4`}>'m</span>
-                 <Anletters
-                 letterClass={letterClass}
-                 arrLetters={nameArr}
-                 idx={5}/>
-               <Anletters
-               letterClass={letterClass}
-               arrLetters={majorArr}
-               idx={11}/>
-                */}
