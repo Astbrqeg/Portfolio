@@ -1,4 +1,4 @@
-.Projects {
+/* .Projects {
     padding-bottom: 10%;
 }
 
@@ -63,4 +63,86 @@
     width: 600px;
     height: 300px;
     border-radius: 20px;
+}
+
+.card1:hover,
+.card2:hover {
+    transform: translateY(-10px);
+} */
+
+
+.card {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.projectCards{
+    display: flex;
+    justify-content: space-around;
+}
+
+.prh1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-family: Playfair;
+}
+
+.projectImage {
+    width: 600px;
+    height: 300px;
+    border-radius: 20px;
+    transition: filter 0.3s ease;
+}
+
+.projectOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 10px;
+}
+
+.paragraph {
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.buttonContainer {
+    margin-top: 80px;
+}
+
+.viewCode {
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    color: #51b9e9;
+    font-size: 18px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.viewCodeLink {
+    color: #51b9e9;
+    text-decoration: none;
+}
+
+.card:hover .projectImage {
+    filter: blur(5px);
+}
+
+.card:hover .projectOverlay {
+    opacity: 1;
 }
