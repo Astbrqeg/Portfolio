@@ -1,16 +1,17 @@
 import { useState, useEffect } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
 import './NavBar.css';
 import '../../App.css';
 import navIcon1 from "../../img/nav-icon1.svg";
 import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-scroll';
+
 
 
 
 export const NavBar = () => {
 
-    const [activeLink, setActiveLink] = useState("home");
     const [scrolled, setScrolled] = useState(false);
+
 
     useEffect(() => {
         const onScroll = () => {
@@ -26,36 +27,55 @@ export const NavBar = () => {
         return () => window.addEventListener("scroll", onScroll);
     }, [])
 
-    const onUpdateActiveLink = (value) => {
-        setActiveLink(value);
-    }
 
     return (
 
         <div className="nav" >
 
-
             <div id="navbarSupportedContent" className={scrolled ? 'scrolled' : ''}>
 
                 <div className="social-icon">
-                    <a href="https://www.linkedin.com/in/fullstackastbrq/"><img src={navIcon1} alt="" /></a>
+                    <a href="https://www.linkedin.com/in/fullstackastbrq/"><img src={navIcon1} alt="linkedin" /></a>
                 </div>
+
                 <nav>
                     <ul className="navbar-nav-mr-auto">
                         <li className="nav-item">
-                            <a className='nav-link' onClick={() => onUpdateActiveLink('home')} href="#">Home</a>
+                            <Link
+                                to="home"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >
+                                Home
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className='nav-link' onClick={() => onUpdateActiveLink('kills')} href="#">Skills</a>
+                            <Link
+                                to="skills"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >
+                                Skills
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className='nav-link' onClick={() => onUpdateActiveLink('projects')} href="#">Projects</a>
+                            <Link
+                                to="projects"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >
+                                Projects
+                            </Link>
                         </li>
                     </ul>
-
                 </nav>
-
-                <HashLink to='#connect'>
+                <HashLink to='contact'>
                     <button className="vvd"><span>Let’s Connect</span></button>
                 </HashLink>
 

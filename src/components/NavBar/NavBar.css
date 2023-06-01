@@ -25,24 +25,23 @@
     align-items: center;
 }
 
+.navbar-nav-mr-auto li:hover {
+    opacity: 1.5;
+}
+
 .nav-item {
     padding: 25px 25px;
     list-style-type: none;
-
-}
-
-.nav-item :hover {
-    opacity: 1;
-}
-
-.nav-link {
+    cursor: pointer;
     font-weight: 400;
     color: #ffffff;
     opacity: 0.75;
     letter-spacing: 0.8px;
     font-size: 20px;
 
+
 }
+
 
 .social-icon {
     display: inline-flex;
@@ -108,4 +107,27 @@
 
 .vvd span {
     z-index: 1;
+}
+
+.vvd::before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+}
+
+.vvd:hover {
+    color: #121212;
+}
+
+.vvd:hover::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }

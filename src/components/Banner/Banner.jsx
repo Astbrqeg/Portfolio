@@ -5,7 +5,7 @@ import headerimg from "../../img/header-img.svg";
 export const Banner = () =>{
 
     return(
-        <div className="banner">
+        <div className="banner" id="home">
             <div className="paragraph">
                <h1>Hi,<br/>I'm Astbrq
                <br/>

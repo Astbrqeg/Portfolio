@@ -1,12 +1,10 @@
-
-
 .card {
     position: relative;
     display: inline-block;
     margin: 10px;
 }
 
-.projectCards{
+.projectCards {
     display: flex;
     justify-content: space-around;
 }
