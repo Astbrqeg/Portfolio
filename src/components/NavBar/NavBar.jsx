@@ -4,6 +4,7 @@ import '../../App.css';
 import navIcon1 from "../../img/nav-icon1.svg";
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-scroll';
+import Github from '../../img/nav-icon2.svg'
 
 
 
@@ -36,6 +37,8 @@ export const NavBar = () => {
 
                 <div className="social-icon">
                     <a href="https://www.linkedin.com/in/fullstackastbrq/"><img src={navIcon1} alt="linkedin" /></a>
+                    <a href="https://github.com/Astbrqeg"><img src={Github} alt="linkedin" /></a>
+
                 </div>
 
                 <nav>
