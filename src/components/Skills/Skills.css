@@ -1,9 +1,11 @@
+
+
 .rectangle {
     position: absolute;
     background-color: #151515;
     width: 900px;
     height: 300px;
-    top: 53%;
+    top: 30%;
     left: 24%;
     border-radius: 30px;
 

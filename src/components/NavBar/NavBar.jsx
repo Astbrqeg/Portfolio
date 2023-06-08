@@ -78,7 +78,7 @@ export const NavBar = () => {
                         </li>
                     </ul>
                 </nav>
-                <HashLink to='contact'>
+                <HashLink to='/#contact'>
                     <button className="vvd"><span>Let’s Connect</span></button>
                 </HashLink>
 

@@ -16,6 +16,7 @@ function App() {
       <Banner />
       <Skills />
       <Projects />
+      <Contact />
       </BrowserRouter>
     </div>
   );
