@@ -18,3 +18,20 @@
     font-family: Playfair;
     margin-top: 20px;
 }
+
+@media screen and (max-width: 768px) {
+
+    .rectangle {
+        width: 100%;
+        height: auto;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 0;
+        margin-bottom: 50px;
+    }
+
+    .skh1 {
+        font-size: 24px;
+    }
+}

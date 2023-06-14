@@ -1,4 +1,4 @@
-.Projects{
+.Projects {
     padding-top: 13%;
 }
 
@@ -76,4 +76,39 @@
 
 .card:hover .projectOverlay {
     opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+    .Projects {
+        padding-top: 150px;
+    }
+
+    .projectCards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .projectImage {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .projectOverlay {
+        padding: 5px;
+    }
+
+    .paragraph {
+        font-size: 18px;
+    }
+
+    .buttonContainer {
+        margin-top: 40px;
+    }
 }

@@ -79,3 +79,64 @@ h2 {
         transform: translateY(-20px);
     }
 }
+
+@media screen and (max-width: 767px) {
+    .banner {
+    padding: 160px 0 300px 0;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    }
+    
+    .paragraph {
+    left: 5%;
+    }
+    
+    h1 {
+    font-size: 25px;
+    }
+    .major {
+        border-right: 5px solid;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 70%;
+        animation: typing 2s steps(20),
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+    
+    
+    .banner img {
+        animation: updown 3s linear infinite;
+        width: 100px;
+    
+    }
+    
+    
+    @keyframes updown {
+        0% {
+            transform: translateY(-10px);
+        }
+    
+        50% {
+            transform: translateY(10px);
+        }
+    
+        100% {
+            transform: translateY(-10px);
+        }
+    }
+    }
